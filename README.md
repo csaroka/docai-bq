@@ -1,5 +1,7 @@
 # Integrating Google Cloud Document AI and Big Query Data Warehouse
 
+*Current status is that the code within this repo is still in development and only supports simple documents with unique keys. Further development will support more complex document types.*
+
 ## Prerequisites
 
 Install the Google Cloud SDK \
