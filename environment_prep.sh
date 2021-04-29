@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_ID="cs-docai-demo3" # Existing Project ID
+PROJECT_ID="cs-docai-demo4" # Existing Project ID
 SERVICE_ACCOUNT_ID="docai-sa"  # New service account created for Document AI
 DOCUMENT_BUCKET="${PROJECT_ID}-docai-import" # New bucket created from script for storing documents in GCS
 OUTPUT_BUCKET="${PROJECT_ID}-docai-output" # New bucket created from script for storing document parsing output in GCS

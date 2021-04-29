@@ -15,6 +15,18 @@ https://cloud.google.com/resource-manager/docs/creating-managing-projects
 
 ## Prepare the Environment
 
+Authorize gcloud access to Google Cloud with your Google user credentials
+
+```bash
+gcloud auth login
+```
+
+Verify selected user credentials
+
+```bash
+gcloud auth list
+```
+
 Clone the repository and change directory to `docai-bq/`
 
 ```bash
@@ -63,7 +75,7 @@ https://cloud.google.com/document-ai/docs/create-processor*
 
 ## Prepare the Simple Document AI Processing Script
 
-Change to the `simple-doc-process\` directory
+Return to the terminal and change to the `simple-doc-process\` directory
 
 ```bash
 cd simple-doc-process
@@ -77,7 +89,7 @@ PROCESSOR_ID="99334450b516e321"#DocumentAI Processor ID
 FORM_FILE_PATH="../sample-forms/form.pdf" #Enter path to form
 LOAN_ID="2345678" #Enter a unique ID
 FORM_NAME="Intake Form" #Enter the form name
-ASSOCIATION_NAME="Bank of SC Farms" #Enter the association name
+ASSOCIATION_NAME="Bank of Farms" #Enter the association name
 ```
 
 Save and close the file. Then, make `docai_simple_process.sh` executable
@@ -91,3 +103,12 @@ Run the script to process the document and output the results into a Big Query d
 ```bash
 ./docai_simple_process.sh
 ```
+
+## Review the output in Big Query
+
+1. In the Google Cloud Console, in the BigQuery section, go to the SQL workspace page.
+2. Locate the project name is the Explorer tab and expand the list of datasets.
+3. Select the dataset that matches the association name.
+4. Select the table that matches the form name.
+5. In the main pane, select the **SCHEMA** tab and review the content
+6. Select the **PREVIEW** tab and review the records parsed from the form analysis.
