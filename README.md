@@ -7,7 +7,7 @@
 Install the Google Cloud SDK \
 https://cloud.google.com/sdk/docs/install \
 Install jq \
-https://github.com/stedolan/jq/wiki/Installation\
+https://github.com/stedolan/jq/wiki/Installation \
 Install Python 3 \
 https://www.python.org/downloads/ \
 Create a GCP project \
@@ -22,7 +22,7 @@ git clone https://github.com/csaroka/docai-bq.git
 cd docai-bq
 ```
 
-Open the `environment_prep.sh` file and update the PROJECT_ID value. Optionally, update the others or proceed with the default values.
+Open the `environment_prep.sh` file and update the [PROJECT_ID] value. Optionally, update the others or proceed with the default values.
 
 ```bash
 PROJECT_ID="<PROJECT NAME>" # Existing Project ID
