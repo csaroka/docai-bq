@@ -2,13 +2,13 @@
 
 # Update Values to with DocAI Processor Information
 export LOCATION="us" #Enter the DocumentAI Processor location
-export PROCESSOR_ID="99334450b516e321"  #Enter the DocumentAI Processor ID
+export PROCESSOR_ID="617440e88ba39de9"  #Enter the DocumentAI Processor ID
 
 # Update Values to Reflect Form and Entity Details
 export FORM_FILE_PATH="../sample-forms/form.pdf" #Enter path to form
 export LOAN_ID="2345678" #Enter a unique ID to categorize the forms. This ID will be used in the GCS output path and as a ID in the BQ table.
 FORM_NAME="Health Intake Form" #Enter the form name. The BQ table will take on this name.
-ASSOCIATION_NAME="Bank of SC Farms" # Enter the association name. The GCS output directory and BQ dataset will take on this name.
+ASSOCIATION_NAME="Bank of Farms" # Enter the association name. The GCS output directory and BQ dataset will take on this name.
 
 export PROJECT_ID="$(gcloud config get-value project)"
 
